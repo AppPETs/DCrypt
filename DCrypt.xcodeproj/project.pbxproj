@@ -1,0 +1,340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6033BB8221947AA70085666B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6033BB8121947AA70085666B /* AppDelegate.swift */; };
+		6033BB8421947AA70085666B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6033BB8321947AA70085666B /* ViewController.swift */; };
+		6033BB8621947AA80085666B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6033BB8521947AA80085666B /* Assets.xcassets */; };
+		6033BB8921947AA80085666B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6033BB8721947AA80085666B /* Main.storyboard */; };
+		6033BB92219579870085666B /* DropArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6033BB91219579870085666B /* DropArea.swift */; };
+		6033BB9421958D9B0085666B /* FileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6033BB9321958D9B0085666B /* FileHandler.swift */; };
+		6033BB9621958E8E0085666B /* DCrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6033BB9521958E8E0085666B /* DCrypt.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6033BB7E21947AA70085666B /* DCrypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCrypt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6033BB8121947AA70085666B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6033BB8321947AA70085666B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6033BB8521947AA80085666B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6033BB8821947AA80085666B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6033BB8A21947AA80085666B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6033BB8B21947AA80085666B /* DCrypt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DCrypt.entitlements; sourceTree = "<group>"; };
+		6033BB91219579870085666B /* DropArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropArea.swift; sourceTree = "<group>"; };
+		6033BB9321958D9B0085666B /* FileHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHandler.swift; sourceTree = "<group>"; };
+		6033BB9521958E8E0085666B /* DCrypt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCrypt.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6033BB7B21947AA70085666B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6033BB7521947AA70085666B = {
+			isa = PBXGroup;
+			children = (
+				6033BB8021947AA70085666B /* DCrypt */,
+				6033BB7F21947AA70085666B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6033BB7F21947AA70085666B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6033BB7E21947AA70085666B /* DCrypt.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6033BB8021947AA70085666B /* DCrypt */ = {
+			isa = PBXGroup;
+			children = (
+				6033BB8121947AA70085666B /* AppDelegate.swift */,
+				6033BB91219579870085666B /* DropArea.swift */,
+				6033BB9321958D9B0085666B /* FileHandler.swift */,
+				6033BB9521958E8E0085666B /* DCrypt.swift */,
+				6033BB8321947AA70085666B /* ViewController.swift */,
+				6033BB8521947AA80085666B /* Assets.xcassets */,
+				6033BB8721947AA80085666B /* Main.storyboard */,
+				6033BB8A21947AA80085666B /* Info.plist */,
+				6033BB8B21947AA80085666B /* DCrypt.entitlements */,
+			);
+			path = DCrypt;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6033BB7D21947AA70085666B /* DCrypt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6033BB8E21947AA80085666B /* Build configuration list for PBXNativeTarget "DCrypt" */;
+			buildPhases = (
+				6033BB7A21947AA70085666B /* Sources */,
+				6033BB7B21947AA70085666B /* Frameworks */,
+				6033BB7C21947AA70085666B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DCrypt;
+			productName = DCrypt;
+			productReference = 6033BB7E21947AA70085666B /* DCrypt.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6033BB7621947AA70085666B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = DevCamp;
+				TargetAttributes = {
+					6033BB7D21947AA70085666B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 6033BB7921947AA70085666B /* Build configuration list for PBXProject "DCrypt" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6033BB7521947AA70085666B;
+			productRefGroup = 6033BB7F21947AA70085666B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6033BB7D21947AA70085666B /* DCrypt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6033BB7C21947AA70085666B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6033BB8621947AA80085666B /* Assets.xcassets in Resources */,
+				6033BB8921947AA80085666B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6033BB7A21947AA70085666B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6033BB92219579870085666B /* DropArea.swift in Sources */,
+				6033BB8421947AA70085666B /* ViewController.swift in Sources */,
+				6033BB9421958D9B0085666B /* FileHandler.swift in Sources */,
+				6033BB8221947AA70085666B /* AppDelegate.swift in Sources */,
+				6033BB9621958E8E0085666B /* DCrypt.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6033BB8721947AA80085666B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6033BB8821947AA80085666B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6033BB8C21947AA80085666B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6033BB8D21947AA80085666B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		6033BB8F21947AA80085666B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DCrypt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tmp.mamFyNJe.DCrypt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		6033BB9021947AA80085666B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DCrypt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tmp.mamFyNJe.DCrypt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6033BB7921947AA70085666B /* Build configuration list for PBXProject "DCrypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6033BB8C21947AA80085666B /* Debug */,
+				6033BB8D21947AA80085666B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6033BB8E21947AA80085666B /* Build configuration list for PBXNativeTarget "DCrypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6033BB8F21947AA80085666B /* Debug */,
+				6033BB9021947AA80085666B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6033BB7621947AA70085666B /* Project object */;
+}
