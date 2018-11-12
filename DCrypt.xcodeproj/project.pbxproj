@@ -14,7 +14,71 @@
 		6033BB92219579870085666B /* DropArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6033BB91219579870085666B /* DropArea.swift */; };
 		6033BB9421958D9B0085666B /* FileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6033BB9321958D9B0085666B /* FileHandler.swift */; };
 		6033BB9621958E8E0085666B /* DCrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6033BB9521958E8E0085666B /* DCrypt.swift */; };
+		6033BBC5219985A70085666B /* Tafelsalz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6033BBB8219985590085666B /* Tafelsalz.framework */; };
+		6033BBC6219985A70085666B /* Tafelsalz.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6033BBB8219985590085666B /* Tafelsalz.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6033BBDA219986560085666B /* Keychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6033BBD9219986560085666B /* Keychain.framework */; };
+		6033BBDB219986560085666B /* Keychain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6033BBD9219986560085666B /* Keychain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6033BBB7219985590085666B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6033BBAF219985590085666B /* Tafelsalz.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 60C695461DBDE36100CE9435;
+			remoteInfo = Tafelsalz_macOS;
+		};
+		6033BBB9219985590085666B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6033BBAF219985590085666B /* Tafelsalz.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6096E76C1F1A654000E6599F;
+			remoteInfo = Tafelsalz_iOS;
+		};
+		6033BBBB219985590085666B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6033BBAF219985590085666B /* Tafelsalz.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 60C6954F1DBDE36100CE9435;
+			remoteInfo = TafelsalzTests_macOS;
+		};
+		6033BBBD219985590085666B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6033BBAF219985590085666B /* Tafelsalz.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6096E7741F1A654100E6599F;
+			remoteInfo = TafelsalzTests_iOS;
+		};
+		6033BBBF219985590085666B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6033BBAF219985590085666B /* Tafelsalz.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 607EFC4F1F8D018B0084692A;
+			remoteInfo = TafelsalzTestHost;
+		};
+		6033BBC7219985A70085666B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6033BBAF219985590085666B /* Tafelsalz.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 60C695451DBDE36000CE9435;
+			remoteInfo = Tafelsalz_macOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6033BBC42199859E0085666B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6033BBDB219986560085666B /* Keychain.framework in Embed Frameworks */,
+				6033BBC6219985A70085666B /* Tafelsalz.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6033BB7E21947AA70085666B /* DCrypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCrypt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,6 +91,8 @@
 		6033BB91219579870085666B /* DropArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropArea.swift; sourceTree = "<group>"; };
 		6033BB9321958D9B0085666B /* FileHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHandler.swift; sourceTree = "<group>"; };
 		6033BB9521958E8E0085666B /* DCrypt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCrypt.swift; sourceTree = "<group>"; };
+		6033BBAF219985590085666B /* Tafelsalz.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Tafelsalz.xcodeproj; path = Dependencies/Tafelsalz/Tafelsalz.xcodeproj; sourceTree = "<group>"; };
+		6033BBD9219986560085666B /* Keychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Keychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +100,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6033BBDA219986560085666B /* Keychain.framework in Frameworks */,
+				6033BBC5219985A70085666B /* Tafelsalz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,7 +111,9 @@
 		6033BB7521947AA70085666B = {
 			isa = PBXGroup;
 			children = (
+				6033BBD9219986560085666B /* Keychain.framework */,
 				6033BB8021947AA70085666B /* DCrypt */,
+				6033BBAE219985540085666B /* Dependencies */,
 				6033BB7F21947AA70085666B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +142,26 @@
 			path = DCrypt;
 			sourceTree = "<group>";
 		};
+		6033BBAE219985540085666B /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				6033BBAF219985590085666B /* Tafelsalz.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		6033BBB0219985590085666B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6033BBB8219985590085666B /* Tafelsalz.framework */,
+				6033BBBA219985590085666B /* Tafelsalz.framework */,
+				6033BBBC219985590085666B /* TafelsalzTests.xctest */,
+				6033BBBE219985590085666B /* TafelsalzTests.xctest */,
+				6033BBC0219985590085666B /* TafelsalzTestHost.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,10 +172,12 @@
 				6033BB7A21947AA70085666B /* Sources */,
 				6033BB7B21947AA70085666B /* Frameworks */,
 				6033BB7C21947AA70085666B /* Resources */,
+				6033BBC42199859E0085666B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6033BBC8219985A70085666B /* PBXTargetDependency */,
 			);
 			name = DCrypt;
 			productName = DCrypt;
@@ -104,6 +196,11 @@
 				TargetAttributes = {
 					6033BB7D21947AA70085666B = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -118,12 +215,56 @@
 			mainGroup = 6033BB7521947AA70085666B;
 			productRefGroup = 6033BB7F21947AA70085666B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6033BBB0219985590085666B /* Products */;
+					ProjectRef = 6033BBAF219985590085666B /* Tafelsalz.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6033BB7D21947AA70085666B /* DCrypt */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6033BBB8219985590085666B /* Tafelsalz.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Tafelsalz.framework;
+			remoteRef = 6033BBB7219985590085666B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6033BBBA219985590085666B /* Tafelsalz.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Tafelsalz.framework;
+			remoteRef = 6033BBB9219985590085666B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6033BBBC219985590085666B /* TafelsalzTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TafelsalzTests.xctest;
+			remoteRef = 6033BBBB219985590085666B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6033BBBE219985590085666B /* TafelsalzTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TafelsalzTests.xctest;
+			remoteRef = 6033BBBD219985590085666B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6033BBC0219985590085666B /* TafelsalzTestHost.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TafelsalzTestHost.app;
+			remoteRef = 6033BBBF219985590085666B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6033BB7C21947AA70085666B /* Resources */ = {
@@ -151,6 +292,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6033BBC8219985A70085666B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Tafelsalz_macOS;
+			targetProxy = 6033BBC7219985A70085666B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6033BB8721947AA80085666B /* Main.storyboard */ = {
@@ -282,7 +431,9 @@
 		6033BB8F21947AA80085666B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DCrypt/DCrypt.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = DCrypt/Info.plist;
@@ -299,7 +450,9 @@
 		6033BB9021947AA80085666B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DCrypt/DCrypt.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = DCrypt/Info.plist;
