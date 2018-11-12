@@ -1,8 +1,10 @@
 import Foundation
+import Tafelsalz
 
 class DCrypt: FileHandler {
 
 	enum Error: Swift.Error {
+		case invalidCiphertextSize
 		case decryptionFailed
 	}
 
