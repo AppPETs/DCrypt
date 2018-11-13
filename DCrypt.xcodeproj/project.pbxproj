@@ -18,6 +18,7 @@
 		6033BBC6219985A70085666B /* Tafelsalz.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6033BBB8219985590085666B /* Tafelsalz.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6033BBDA219986560085666B /* Keychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6033BBD9219986560085666B /* Keychain.framework */; };
 		6033BBDB219986560085666B /* Keychain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6033BBD9219986560085666B /* Keychain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6033BBF6219B1A0F0085666B /* DCryptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6033BBF5219B1A0F0085666B /* DCryptTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,13 @@
 			remoteGlobalIDString = 60C695451DBDE36000CE9435;
 			remoteInfo = Tafelsalz_macOS;
 		};
+		6033BBF8219B1A0F0085666B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6033BB7621947AA70085666B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6033BB7D21947AA70085666B;
+			remoteInfo = DCrypt;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -93,6 +101,9 @@
 		6033BB9521958E8E0085666B /* DCrypt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCrypt.swift; sourceTree = "<group>"; };
 		6033BBAF219985590085666B /* Tafelsalz.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Tafelsalz.xcodeproj; path = Dependencies/Tafelsalz/Tafelsalz.xcodeproj; sourceTree = "<group>"; };
 		6033BBD9219986560085666B /* Keychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Keychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6033BBF3219B1A0F0085666B /* DCryptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DCryptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6033BBF5219B1A0F0085666B /* DCryptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCryptTests.swift; sourceTree = "<group>"; };
+		6033BBF7219B1A0F0085666B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +116,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6033BBF0219B1A0F0085666B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -113,6 +131,7 @@
 			children = (
 				6033BBD9219986560085666B /* Keychain.framework */,
 				6033BB8021947AA70085666B /* DCrypt */,
+				6033BBF4219B1A0F0085666B /* DCryptTests */,
 				6033BBAE219985540085666B /* Dependencies */,
 				6033BB7F21947AA70085666B /* Products */,
 			);
@@ -122,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				6033BB7E21947AA70085666B /* DCrypt.app */,
+				6033BBF3219B1A0F0085666B /* DCryptTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,6 +182,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		6033BBF4219B1A0F0085666B /* DCryptTests */ = {
+			isa = PBXGroup;
+			children = (
+				6033BBF5219B1A0F0085666B /* DCryptTests.swift */,
+				6033BBF7219B1A0F0085666B /* Info.plist */,
+			);
+			path = DCryptTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -184,6 +213,24 @@
 			productReference = 6033BB7E21947AA70085666B /* DCrypt.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6033BBF2219B1A0F0085666B /* DCryptTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6033BC00219B1A0F0085666B /* Build configuration list for PBXNativeTarget "DCryptTests" */;
+			buildPhases = (
+				6033BBEF219B1A0F0085666B /* Sources */,
+				6033BBF0219B1A0F0085666B /* Frameworks */,
+				6033BBF1219B1A0F0085666B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6033BBF9219B1A0F0085666B /* PBXTargetDependency */,
+			);
+			name = DCryptTests;
+			productName = DCryptTests;
+			productReference = 6033BBF3219B1A0F0085666B /* DCryptTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,6 +248,10 @@
 								enabled = 1;
 							};
 						};
+					};
+					6033BBF2219B1A0F0085666B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 6033BB7D21947AA70085666B;
 					};
 				};
 			};
@@ -224,6 +275,7 @@
 			projectRoot = "";
 			targets = (
 				6033BB7D21947AA70085666B /* DCrypt */,
+				6033BBF2219B1A0F0085666B /* DCryptTests */,
 			);
 		};
 /* End PBXProject section */
@@ -276,6 +328,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6033BBF1219B1A0F0085666B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -291,6 +350,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6033BBEF219B1A0F0085666B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6033BBF6219B1A0F0085666B /* DCryptTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -298,6 +365,11 @@
 			isa = PBXTargetDependency;
 			name = Tafelsalz_macOS;
 			targetProxy = 6033BBC7219985A70085666B /* PBXContainerItemProxy */;
+		};
+		6033BBF9219B1A0F0085666B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6033BB7D21947AA70085666B /* DCrypt */;
+			targetProxy = 6033BBF8219B1A0F0085666B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -466,6 +538,44 @@
 			};
 			name = Release;
 		};
+		6033BBFA219B1A0F0085666B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DCryptTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tmp.mamFyNJe.DCryptTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DCrypt.app/Contents/MacOS/DCrypt";
+			};
+			name = Debug;
+		};
+		6033BBFB219B1A0F0085666B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DCryptTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tmp.mamFyNJe.DCryptTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DCrypt.app/Contents/MacOS/DCrypt";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -483,6 +593,15 @@
 			buildConfigurations = (
 				6033BB8F21947AA80085666B /* Debug */,
 				6033BB9021947AA80085666B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6033BC00219B1A0F0085666B /* Build configuration list for PBXNativeTarget "DCryptTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6033BBFA219B1A0F0085666B /* Debug */,
+				6033BBFB219B1A0F0085666B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
