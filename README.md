@@ -6,6 +6,11 @@ The stub application is quite simple: You can drop files into the application in
 
 ⚠️ This project is for educational purposes only. Do not use this for productive purposes!
 
+## Requirements
+
+- macOS 10.13 (High Sierra)
+- [Xcode](https://developer.apple.com/xcode/)
+
 ## Goals
 
 - Check out and open the project:
