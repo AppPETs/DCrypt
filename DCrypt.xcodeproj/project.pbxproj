@@ -149,15 +149,8 @@
 		6033BB8021947AA70085666B /* DCrypt */ = {
 			isa = PBXGroup;
 			children = (
-				6033BB8121947AA70085666B /* AppDelegate.swift */,
-				6033BB91219579870085666B /* DropArea.swift */,
-				6033BB9321958D9B0085666B /* FileHandler.swift */,
+				6033BC01219B21520085666B /* Supporting Files */,
 				6033BB9521958E8E0085666B /* DCrypt.swift */,
-				6033BB8321947AA70085666B /* ViewController.swift */,
-				6033BB8521947AA80085666B /* Assets.xcassets */,
-				6033BB8721947AA80085666B /* Main.storyboard */,
-				6033BB8A21947AA80085666B /* Info.plist */,
-				6033BB8B21947AA80085666B /* DCrypt.entitlements */,
 			);
 			path = DCrypt;
 			sourceTree = "<group>";
@@ -185,10 +178,33 @@
 		6033BBF4219B1A0F0085666B /* DCryptTests */ = {
 			isa = PBXGroup;
 			children = (
+				6033BC02219B21830085666B /* Supporting Files */,
 				6033BBF5219B1A0F0085666B /* DCryptTests.swift */,
-				6033BBF7219B1A0F0085666B /* Info.plist */,
 			);
 			path = DCryptTests;
+			sourceTree = "<group>";
+		};
+		6033BC01219B21520085666B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6033BB8A21947AA80085666B /* Info.plist */,
+				6033BB8521947AA80085666B /* Assets.xcassets */,
+				6033BB8B21947AA80085666B /* DCrypt.entitlements */,
+				6033BB8721947AA80085666B /* Main.storyboard */,
+				6033BB8121947AA70085666B /* AppDelegate.swift */,
+				6033BB91219579870085666B /* DropArea.swift */,
+				6033BB9321958D9B0085666B /* FileHandler.swift */,
+				6033BB8321947AA70085666B /* ViewController.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6033BC02219B21830085666B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6033BBF7219B1A0F0085666B /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
