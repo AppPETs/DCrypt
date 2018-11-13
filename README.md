@@ -13,7 +13,7 @@ The stub application is quite simple: You can drop files into the application in
 
 ## Goals
 
-- Check out and open the project:
+1. Check out and open the project:
 
   ```sh
   git clone --recursive https://github.com/AppPETs/DCrypt.git
@@ -21,11 +21,11 @@ The stub application is quite simple: You can drop files into the application in
   open DCrypt.xcodeproj
   ```
 
-- Implement encryption and decryption in `DCrypt.swift` by using the [Tafelsalz framework](https://blochberger.github.io/Tafelsalz).
+2. Implement encryption and decryption in `DCrypt.swift` by using the [Tafelsalz framework](https://blochberger.github.io/Tafelsalz).
 
-- (Optional) Implement unit tests for encryption and decryption in `DCryptTests.swift`.
+3. (Optional) Implement unit tests for encryption and decryption in `DCryptTests.swift`.
 
-- Check if your application can still decrypt files if you quit and relaunch it.
+4. Check if your application can still decrypt files if you quit and relaunch it.
 
 ## References
 
