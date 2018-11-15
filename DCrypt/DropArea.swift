@@ -112,7 +112,9 @@ class DropArea: NSImageView {
 					do {
 						bytesToWrite = try delegate.decrypt(bytes: [UInt8](content))
 					} catch {
-						fatalError("ERROR: \(error.localizedDescription)")
+						let alert = NSAlert(error: error)
+						alert.beginSheetModal(for: self.window!)
+						return false
 					}
 				} else {
 					// Encrypt file
@@ -129,12 +131,16 @@ class DropArea: NSImageView {
 						do {
 							try Data(bytesToWrite).write(to: targetUrl)
 						} catch {
-							fatalError("ERROR: \(error.localizedDescription)")
+							let alert = NSAlert(error: error)
+							alert.beginSheetModal(for: self.window!)
+							return
 						}
 					}
 				}
 			} catch {
-				fatalError("ERROR: \(error.localizedDescription)")
+				let alert = NSAlert(error: error)
+				alert.beginSheetModal(for: self.window!)
+				return false
 			}
 		}
 
