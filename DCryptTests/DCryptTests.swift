@@ -1,4 +1,5 @@
 import XCTest
+import Tafelsalz
 @testable import DCrypt
 
 class DCryptTests: XCTestCase {
