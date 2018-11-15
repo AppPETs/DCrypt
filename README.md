@@ -21,13 +21,13 @@ The stub application is quite simple: You can drop files into the application in
   open DCrypt.xcodeproj
   ```
 
-2. Implement encryption and decryption in `ViewController.swift` by using the [Tafelsalz framework](https://blochberger.github.io/Tafelsalz).
+2. Implement encryption and decryption in `DCrypt.swift` by using the [Tafelsalz framework](https://blochberger.github.io/Tafelsalz).
 
 3. (Optional) Implement unit tests for encryption and decryption in `DCryptTests.swift`.
 
 4. Check if your application can still decrypt files if you quit and relaunch it.
 
-5. What would you do, if you want to share the encrypted file with someone else (like encrypted ZIP files)?
+5. What would you do, if you want to share the encrypted file with someone else (like encrypted ZIP files)? You might need to take a look at `ViewController.swift`.
 
 ## References
 
