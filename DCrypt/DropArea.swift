@@ -12,7 +12,15 @@ class DropArea: NSImageView {
 		}
 	}
 
-//	private var draggedUrl: URL? = nil
+	private var draggedUrl: URL? = nil
+
+	public var icon: NSImage? {
+		guard let path = draggedUrl?.path else {
+			return nil
+		}
+
+		return NSWorkspace.shared.icon(forFile: path)
+	}
 
 	func shouldAllowDrag(_ draggingInfo: NSDraggingInfo) -> Bool {
 		let pasteboard = draggingInfo.draggingPasteboard
@@ -91,7 +99,7 @@ class DropArea: NSImageView {
 		let url = urls.first!
 		assert(url.isFileURL)
 
-//		draggedUrl = url
+		draggedUrl = url
 
 		// Load file and pass bytes to delegate
 		if let delegate = delegate {
@@ -112,6 +120,9 @@ class DropArea: NSImageView {
 					do {
 						bytesToWrite = try delegate.decrypt(bytes: [UInt8](content))
 					} catch {
+						if let e = error as? DCryptError, e == .userCanceled {
+							return false
+						}
 						let alert = NSAlert(error: error)
 						alert.beginSheetModal(for: self.window!)
 						return false
@@ -119,7 +130,16 @@ class DropArea: NSImageView {
 				} else {
 					// Encrypt file
 					savePanel.nameFieldStringValue = filename + ".dcrypt"
-					bytesToWrite = delegate.encrypt(bytes: [UInt8](content))
+					do {
+						bytesToWrite = try delegate.encrypt(bytes: [UInt8](content))
+					} catch {
+						if let e = error as? DCryptError, e == .userCanceled {
+							return false
+						}
+						let alert = NSAlert(error: error)
+						alert.beginSheetModal(for: self.window!)
+						return false
+					}
 				}
 
 				savePanel.beginSheetModal(for: window!) {
@@ -131,6 +151,9 @@ class DropArea: NSImageView {
 						do {
 							try Data(bytesToWrite).write(to: targetUrl)
 						} catch {
+							if let e = error as? DCryptError, e == .userCanceled {
+								return
+							}
 							let alert = NSAlert(error: error)
 							alert.beginSheetModal(for: self.window!)
 							return
@@ -138,6 +161,9 @@ class DropArea: NSImageView {
 					}
 				}
 			} catch {
+				if let e = error as? DCryptError, e == .userCanceled {
+					return false
+				}
 				let alert = NSAlert(error: error)
 				alert.beginSheetModal(for: self.window!)
 				return false
@@ -152,7 +178,7 @@ class DropArea: NSImageView {
 	}
 
 	override func concludeDragOperation(_ sender: NSDraggingInfo?) {
-//		assert(draggedUrl != nil)
+		assert(draggedUrl != nil)
 
 //		let path = draggedUrl!.path
 

@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6023F557219DD89A00BA486A /* DCrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6023F556219DD89A00BA486A /* DCrypt.swift */; };
+		6023F559219DD94900BA486A /* DCryptError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6023F558219DD94900BA486A /* DCryptError.swift */; };
 		6033BB8221947AA70085666B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6033BB8121947AA70085666B /* AppDelegate.swift */; };
 		6033BB8421947AA70085666B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6033BB8321947AA70085666B /* ViewController.swift */; };
 		6033BB8621947AA80085666B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6033BB8521947AA80085666B /* Assets.xcassets */; };
 		6033BB8921947AA80085666B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6033BB8721947AA80085666B /* Main.storyboard */; };
 		6033BB92219579870085666B /* DropArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6033BB91219579870085666B /* DropArea.swift */; };
 		6033BB9421958D9B0085666B /* FileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6033BB9321958D9B0085666B /* FileHandler.swift */; };
-		6033BB9621958E8E0085666B /* DCrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6033BB9521958E8E0085666B /* DCrypt.swift */; };
 		6033BBC5219985A70085666B /* Tafelsalz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6033BBB8219985590085666B /* Tafelsalz.framework */; };
 		6033BBC6219985A70085666B /* Tafelsalz.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6033BBB8219985590085666B /* Tafelsalz.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6033BBDA219986560085666B /* Keychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6033BBD9219986560085666B /* Keychain.framework */; };
@@ -89,6 +90,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6023F556219DD89A00BA486A /* DCrypt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCrypt.swift; sourceTree = "<group>"; };
+		6023F558219DD94900BA486A /* DCryptError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCryptError.swift; sourceTree = "<group>"; };
 		6033BB7E21947AA70085666B /* DCrypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCrypt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6033BB8121947AA70085666B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6033BB8321947AA70085666B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,7 +101,6 @@
 		6033BB8B21947AA80085666B /* DCrypt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DCrypt.entitlements; sourceTree = "<group>"; };
 		6033BB91219579870085666B /* DropArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropArea.swift; sourceTree = "<group>"; };
 		6033BB9321958D9B0085666B /* FileHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHandler.swift; sourceTree = "<group>"; };
-		6033BB9521958E8E0085666B /* DCrypt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCrypt.swift; sourceTree = "<group>"; };
 		6033BBAF219985590085666B /* Tafelsalz.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Tafelsalz.xcodeproj; path = Dependencies/Tafelsalz/Tafelsalz.xcodeproj; sourceTree = "<group>"; };
 		6033BBD9219986560085666B /* Keychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Keychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6033BBF3219B1A0F0085666B /* DCryptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DCryptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,7 +152,9 @@
 			isa = PBXGroup;
 			children = (
 				6033BC01219B21520085666B /* Supporting Files */,
-				6033BB9521958E8E0085666B /* DCrypt.swift */,
+				6033BB8321947AA70085666B /* ViewController.swift */,
+				6023F558219DD94900BA486A /* DCryptError.swift */,
+				6023F556219DD89A00BA486A /* DCrypt.swift */,
 			);
 			path = DCrypt;
 			sourceTree = "<group>";
@@ -194,7 +198,6 @@
 				6033BB8121947AA70085666B /* AppDelegate.swift */,
 				6033BB91219579870085666B /* DropArea.swift */,
 				6033BB9321958D9B0085666B /* FileHandler.swift */,
-				6033BB8321947AA70085666B /* ViewController.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -358,11 +361,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6023F559219DD94900BA486A /* DCryptError.swift in Sources */,
 				6033BB92219579870085666B /* DropArea.swift in Sources */,
 				6033BB8421947AA70085666B /* ViewController.swift in Sources */,
 				6033BB9421958D9B0085666B /* FileHandler.swift in Sources */,
 				6033BB8221947AA70085666B /* AppDelegate.swift in Sources */,
-				6033BB9621958E8E0085666B /* DCrypt.swift in Sources */,
+				6023F557219DD89A00BA486A /* DCrypt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
