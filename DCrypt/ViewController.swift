@@ -7,7 +7,7 @@ class ViewController: NSViewController, FileHandler {
 
 	@IBOutlet weak var dropArea: DropArea!
 
-	func promptPassword() -> String? {
+	func promptPassword() -> Password? {
 		let passwordField = NSSecureTextField(frame: NSRect(x: 0, y: 0, width: 300, height: 22))
 		passwordField.placeholderString = "Enter password…"
 
@@ -20,10 +20,11 @@ class ViewController: NSViewController, FileHandler {
 
 		switch alert.runModal() {
 			case .alertFirstButtonReturn: // .OK
-				return passwordField.stringValue
+				return Password(passwordField.stringValue)
 			default:
 				return nil
 		}
+
 	}
 
 	// MARK: NSViewController
@@ -35,13 +36,13 @@ class ViewController: NSViewController, FileHandler {
 
 	// MARK: FileHandler
 
-	func encrypt(bytes: [UInt8]) throws -> [UInt8] {
+	func encrypt(bytes: Bytes) throws -> Bytes {
 		// <#TODO#> If you need to pass additional user input to the encryption
 		//      function, this would be the perfect place.
 		return dcrypt.encrypt(bytes: bytes)
 	}
 
-	func decrypt(bytes: [UInt8]) throws -> [UInt8] {
+	func decrypt(bytes: Bytes) throws -> Bytes {
 		// <#TODO#> If you need to pass additional user input to the decryption
 		//      function, this would be the perfect place.
 		return try dcrypt.decrypt(bytes: bytes)

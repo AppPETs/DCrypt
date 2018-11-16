@@ -1,4 +1,5 @@
 import Cocoa
+import Tafelsalz
 
 class DropArea: NSImageView {
 
@@ -113,12 +114,12 @@ class DropArea: NSImageView {
 				savePanel.directoryURL = URL(fileURLWithPath: url.deletingLastPathComponent().path, isDirectory: true)
 				savePanel.isExtensionHidden = false
 
-				let bytesToWrite: [UInt8]
+				let bytesToWrite: Bytes
 				if ext == "dcrypt" {
 					// Decrypt file
 					savePanel.nameFieldStringValue = basename
 					do {
-						bytesToWrite = try delegate.decrypt(bytes: [UInt8](content))
+						bytesToWrite = try delegate.decrypt(bytes: Bytes(content))
 					} catch {
 						if let e = error as? DCryptError, e == .userCanceled {
 							return false
@@ -131,7 +132,7 @@ class DropArea: NSImageView {
 					// Encrypt file
 					savePanel.nameFieldStringValue = filename + ".dcrypt"
 					do {
-						bytesToWrite = try delegate.encrypt(bytes: [UInt8](content))
+						bytesToWrite = try delegate.encrypt(bytes: Bytes(content))
 					} catch {
 						if let e = error as? DCryptError, e == .userCanceled {
 							return false

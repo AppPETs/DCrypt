@@ -1,6 +1,7 @@
 import Foundation
+import Tafelsalz
 
 protocol FileHandler {
-	func encrypt(bytes: [UInt8]) throws -> [UInt8]
-	func decrypt(bytes: [UInt8]) throws -> [UInt8]
+	func encrypt(bytes: Bytes) throws -> Bytes
+	func decrypt(bytes: Bytes) throws -> Bytes
 }

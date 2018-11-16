@@ -3,12 +3,12 @@ import Tafelsalz
 
 class DCrypt {
 
-	func encrypt(bytes: [UInt8]) -> [UInt8] {
+	func encrypt(bytes: Bytes) -> Bytes {
 		// <#TODO#> Encrypt
 		return []
 	}
 
-	func decrypt(bytes: [UInt8]) throws -> [UInt8] {
+	func decrypt(bytes: Bytes) throws -> Bytes {
 		// <#TODO#> Decrypt
 		return []
 	}
