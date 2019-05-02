@@ -262,6 +262,7 @@
 				TargetAttributes = {
 					6033BB7D21947AA70085666B = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 1;
@@ -270,6 +271,7 @@
 					};
 					6033BBF2219B1A0F0085666B = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 6033BB7D21947AA70085666B;
 					};
 				};
@@ -535,7 +537,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tmp.mamFyNJe.DCrypt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -554,7 +556,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tmp.mamFyNJe.DCrypt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -572,7 +574,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tmp.mamFyNJe.DCryptTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DCrypt.app/Contents/MacOS/DCrypt";
 			};
 			name = Debug;
@@ -591,7 +593,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tmp.mamFyNJe.DCryptTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DCrypt.app/Contents/MacOS/DCrypt";
 			};
 			name = Release;
