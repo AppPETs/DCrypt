@@ -39,4 +39,4 @@ The stub application is quite simple: You can drop files into the application in
 | Date       | Event                                                      |
 | ---------- | ---------------------------------------------------------- |
 | 2018-11-16 | [GI DevCamp 2018](https://hamburg.dev-camp.com) (workshop) |
-
+| 2019-11-22 | [GI DevCamp 2019](https://hamburg.dev-camp.com) (workshop) |
